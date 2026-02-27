@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=>, initial-scale=1.0">
+    <title> Happy Birthday My Queen ❤️</title>
+    <style>
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #ff758c, #ff7eb3);
+    color: white;
+    text-align: center;
+    overflow-x: hidden;
+}
+
+section {
+    padding: 80px 20px;
+}
+
+.hero {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0,0,0,0.3);
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+.gallery {
+    position: relative;
+    max-width: 500px;
+    margin: auto;
+}
+
+.slide {
+    display: none;
+}
+
+.slide img {
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
+
+button {
+    padding: 12px 25px;
+    border: none;
+    border-radius: 25px;
+    background: white;
+    color: #ff4f81;
+    cursor: pointer;
+    margin: 10px;
+}
+
+.hidden-message {
+    display: none;
+    font-size: 1.3rem;
+    margin-top: 20px;
+}
+
+footer {
+    padding: 30px;
+    font-size: 0.9rem;
+}
+</style>
+</head>
+<body>
+    <!-- Background Music -->
+<audio autoplay loop>
+    <source src="music.mp3" type="audio/mpeg">
+</audio>
+
+<section class="hero">
+    <h1>Happy Birthday My Love 👑❤️</h1>
+    <p>You are my favorite blessing.</p>
+</section>
+
+<section>
+    <h2>Our Memories 📸</h2>
+    <div class="gallery">
+        <div class="slide"><img src="pic1.jpg"></div>
+        <div class="slide"><img src="pic2.jpg"></div>
+        <div class="slide"><img src="pic3.jpg"></div>
+    </div>
+</section>
+
+<section>
+    <h2>A Letter To You 💌</h2>
+    <p style="max-width:700px;margin:auto;line-height:1.8;">
+       <p>
+Today isn’t just your birthday. It’s the day the world was blessed with you.
+And I’m grateful every single day that somehow, life connected you to me.
+</p>
+
+<p>
+You’re more than beautiful. You have this presence,this energy,
+that makes everything feel calm and alive at the same time.
+Your smile changes my mood instantly.
+Your voice feels like peace.
+</p>
+
+<p>
+I really do love you. Not in a temporary way.
+Not in a “for now” way.
+But in a way that wants to grow, build, and last.
+</p>
+
+<p>
+I don’t want games.
+I don’t want half effort.
+I want something real.
+Loyal. Honest. Soft. Strong.
+And I want it with you.
+</p>
+
+<p>
+On your birthday, I pray this new year brings you happiness,
+clarity, success, protection, and everything your heart secretly desires.
+And I hope I get to be beside you while you achieve all of it.
+</p>
+
+<p>
+You are chosen.
+You are valued.
+You are deeply loved.
+And today, we celebrate you.
+</p>
+    </p>
+</section>
+
+<section>
+    <h2>What I Want With You 🌹</h2>
+    <p style="max-width:700px;margin:auto;line-height:1.8;">
+        I want late night talks.
+        I want random laughter.
+        I want peace between us.
+        I want loyalty and trust.
+        I want to grow with you, not apart from you.
+        I want us to build something that feels safe and unshakable.
+    </p>
+</section>
+
+<section>
+    <button onclick="showMessage()">Click Me ❤️</button>
+    <div class="hidden-message" id="hiddenMessage">
+        I’m not going anywhere. I choose you. Always.
+    </div>
+</section>
+
+<footer>
+    Made with love by Caleb 💕
+</footer>
+
+
+<script>
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    let slides = document.getElementsByClassName("slide");
+    for (let i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) { slideIndex = 1; }
+    slides[slideIndex - 1].style.display = "block";
+    setTimeout(showSlides, 3000);
+}
+
+function showMessage() {
+    document.getElementById("hiddenMessage").style.display = "block";
+}
+</script>
+
+</body>
+</html>
